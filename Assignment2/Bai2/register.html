@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <h1>Register New Account</h1>
+    <div class="container">
+        <form onsubmit="showInfo()" method="post">
+            <div class="form-group">
+                <label for="Firstname">
+                    <b>First name</b>
+                </label>
+                <input type="text" id="Firstname" name="Firstname">
+                <div id="FirstnameError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="Lastname">
+                    <b>Last name</b>
+                </label>
+                <input type="text" id="Lastname" name="Lastname">
+                <div id="LastnameError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="Username">
+                    <b>Username</b>
+                </label>
+                <input type="text" id="Username" name="Username">
+                <div id="UsernameError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="Email">
+                    <b>Email</b>
+                </label>
+                <input type="text" id="Email" name="Email">
+                <div id="EmailError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="Password">
+                    <b>Password</b>
+                </label>
+                <input type="password" id="password" name="password" pattern="\d{8}">
+                <div id="passwordError" class="error"></div>
+            </div>
+                    <input type="submit" value="Register" name="Register">
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>
